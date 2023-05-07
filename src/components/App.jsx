@@ -67,7 +67,7 @@ export class App extends Component {
         <ContactForm addContact={this.addContact} />
         <h2>Contacts</h2>
         <Filter filter={this.state.filter} handleInputChange={this.handleInputChange} />
-        <ContactList onDeleteContact={this.delContact} contacts={this.filter()} />
+        <ContactList onDeleteContact={this.onDeleteContact} contacts={this.filter()} />
       </div>
     );
   }
